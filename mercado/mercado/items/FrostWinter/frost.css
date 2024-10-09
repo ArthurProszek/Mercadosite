@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* BACKGROUND PAGES */
+
+.background-page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #171717;
+
+}
+
+
+/* =========================================================== */
+
+
+/* HEADER */
+
+header {
+    height: 10vh;
+    width: 100%;
+    transition: ease-in-out 400ms;
+    background-color: #171717;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        /* TAMANHO IMAGENS HEADER */
+        height: 6vh;
+        margin-left: -4vw;
+    }
+
+    p {
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        transition: ease-in-out 200ms;
+
+    }
+
+    p:hover {
+        border-bottom: solid white 1px;
+    }
+
+
+
+
+    .text-header {
+        /* TAMANHO TEXTO HEADER */
+        display: flex;
+        gap: 1vw;
+    }
+
+    .logo-header {
+        /* TAMANHO LOGO HEADER */
+        height: 6vh;
+        width: auto;
+    }
+
+    .icons-header {
+        /* TAMANHO ICONES HEADER */
+        display: flex;
+        gap: 2vw;
+
+        img {
+            cursor: pointer;
+        }
+
+
+
+
+    }
+}
+
+/* =========================================================== */
+
+#align_item_frost {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #block_frost {
+        height: 70vh;
+        width: 70vw;
+        background-color: #171717;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        #image_frost {
+            height: 60vh;
+            width: 30vw;
+            background-image: url(../../image/catalog_clima_3.jpg);
+            background-size: cover;
+        }
+
+        #text_frost {
+            max-width: 30vw;
+
+            h1 {
+                font-size: 4vh;
+                font-weight: 600;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+            }
+
+            h2 {
+                font-size: 10vh;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+            }
+
+
+            p {
+                font-size: 2vh;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: white;
+            }
+
+            button {
+                margin-top: 11vh;
+                font-size: 2vh;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding: 2vh;
+                cursor: pointer;
+                border: solid white 1px;
+                transition: ease-in-out 200ms;
+            }
+
+            button:hover {
+                background-color: #171717;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./checkout.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <section class="background-page1">
+        <header id="Header-JS">
+            <div class="text-header">
+                <a href="../Home/index.html">
+                    <p>Home</p>
+                </a>
+                <a href="../Catalog/catalog.html">
+                    <p>Catálogo</p>
+                </a>
+            </div>
+            <div>
+                <img src="../image/icons/logo(branco).png" alt="" class="logo-header">
+            </div>
+            <div class="icons-header">
+                <div>
+                    <a href="../Cart/carrinho.html"> <img src="../image/icons/bag_white.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+
+        <div id="align_block_item">
+            <div id="block_item">
+                <div id="align_form">
+                    <div id="forms">
+                        <h2>Informações do Cliente:</h2>
+                        <p>Nome: <span id="nome_mostrar"></span></p>
+                        <p>Endereço: <span id="endereco_mostrar"></span></p>
+                        <p>CPF: <span id="cpf_mostrar"></span></p>
+                    </div>
+
+                    <div id="items">
+                        <h2>Itens no Carrinho:</h2>
+                        <div id="crim_checkout" style="display: none;">
+                            <h3>Crimson Horizon: <span id="quantia_crim_checkout"></span></h3>
+                            <p>Preço: <span id="preco_crim_checkout"></span></p>
+                        </div>
+                        <div id="frost_checkout" style="display: none;">
+                            <h3>FrostWinter: <span id="quantia_frost_checkout"></span></h3>
+                            <p>Preço: <span id="preco_frost_checkout"></span></p>
+                        </div>
+                        <div id="hell_checkout" style="display: none;">
+                            <h3>HellCloud: <span id="quantia_hell_checkout"></span></h3>
+                            <p>Preço: <span id="preco_hell_checkout"></span></p>
+                        </div>
+                        <div id="sun_checkout" style="display: none;">
+                            <h3>Sunshine Bay: <span id="quantia_sun_checkout"></span></h3>
+                            <p>Preço: <span id="preco_sun_checkout"></span></p>
+                        </div>
+                        <div id="wind_checkout" style="display: none;">
+                            <h3>WindBond: <span id="quantia_wind_checkout"></span></h3>
+                            <p>Preço: <span id="preco_wind_checkout"></span></p>
+                        </div>
+                    </div>
+
+                    <div id="align_total">
+                        <div id="total-container">
+                            <p>Total: <span id="total_checkout"></span></p>
+                            <button onclick="final()">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./checkout.js"></script>
+</body>
+
+</html>

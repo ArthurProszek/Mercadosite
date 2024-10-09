@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <title>Carrinho</title>
+</head>
+
+<body>
+    <section class="background-page1">
+        <header id="Header-JS">
+            <div class="text-header">
+                <a href="../../Home/index.html">
+                    <p>Home</p>
+                </a>
+                <a href="../../Catalog/catalog.html">
+                    <p>Catálogo</p>
+                </a>
+            </div>
+            <div>
+                <img src="../../image/icons/logo(branco).png" alt="" class="logo-header">
+            </div>
+            <div class="icons-header">
+                <div>
+                    <a href="../../Cart/carrinho.html"><img src="../../image/icons/bag_white.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+        <div id="align_items">
+            <div id="align_block">
+                <div id="crim" class="product-block" style="display: none;">
+                    <p>Crimson Horizon</p>
+                    <p>Preço: <span id="preco_crim"></span></p>
+                    <div id="controle_preco_crim">
+                        <button onclick="sub_crim()">-</button>
+                        <h2><span id="quantia_crim"></span></h2>
+                        <button onclick="soma_crim()">+</button>
+                    </div>
+                </div>
+                <div id="frost" class="product-block" style="display: none;">
+                    <p>FrostWinter</p>
+                    <p>Preço: <span id="preco_frost"></span></p>
+                    <div id="controle_preco_frost">
+                        <button onclick="sub_frost()">-</button>
+                        <h2><span id="quantia_frost"></span></h2>
+                        <button onclick="soma_frost()">+</button>
+                    </div>
+                </div>
+                <div id="hell" class="product-block" style="display: none;">
+                    <p>HellCloud</p>
+                    <p>Preço: <span id="preco_hell"></span></p>
+                    <div id="controle_preco_hell">
+                        <button onclick="sub_hell()">-</button>
+                        <h2><span id="quantia_hell"></span></h2>
+                        <button onclick="soma_hell()">+</button>
+                    </div>
+                </div>
+                <div id="sun" class="product-block" style="display: none;">
+                    <p>Sunshine Bay</p>
+                    <p>Preço: <span id="preco_sun"></span></p>
+                    <div id="controle_preco_sun">
+                        <button onclick="sub_sun()">-</button>
+                        <h2><span id="quantia_sun"></span></h2>
+                        <button onclick="soma_sun()">+</button>
+                    </div>
+                </div>
+                <div id="wind" class="product-block" style="display: none;">
+                    <p>WindBond</p>
+                    <p>Preço: <span id="preco_wind"></span></p>
+                    <div id="controle_preco_wind">
+                        <button onclick="sub_wind()">-</button>
+                        <h2><span id="quantia_wind"></span></h2>
+                        <button onclick="soma_wind()">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="align_forms">
+            <form id="form" action="../Checkout/checkout.html" method="GET">
+                <div>
+                    <p>Nome:</p>
+                    <input type="text" placeholder="Nome..." id="nome" name="nome" required>
+                </div>
+                <div>
+                    <p>Endereço:</p>
+                    <input type="text" placeholder="Endereço..." id="endereco" name="endereco" required>
+                </div>
+                <div>
+                    <p>CPF:</p>
+                    <input type="number" placeholder="Cpf..." id="cpf" name="cpf" required>
+                </div>
+                <div>
+                    <button type="submit" onclick="segurar_info()">
+                        Ir para confirmação!
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div id="total-container">
+            <p>Total: <span id="total"></span></p>
+        </div>
+    </section>
+    <script src="carrinho.js"></script>
+</body>
+
+</html>

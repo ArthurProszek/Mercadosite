@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/* BACKGROUND PAGES */
+.background-page1 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    height: 10vh;
+    width: 100%;
+    transition: ease-in-out 400ms;
+    background-color: #171717;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    height: 6vh;
+    margin-left: -4vw;
+}
+
+header p {
+    font-size: 2vh;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+}
+
+header p:hover {
+    border-bottom: solid white 1px;
+}
+
+.text-header {
+    display: flex;
+    gap: 1vw;
+}
+
+.logo-header {
+    height: 6vh;
+    width: auto;
+}
+
+.icons-header {
+    display: flex;
+    gap: 2vw;
+}
+
+.icons-header img {
+    cursor: pointer;
+}
+
+#align_block_item {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#block_item {
+    width: 70vw;
+    background-color: #282828;
+    padding: 20px;
+}
+
+#align_form {
+    width: 100%;
+}
+
+#forms {
+    margin-bottom: 20px;
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#total-container {
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: right;
+
+    
+}
+
+#total-container button{
+    font-size: 2vh;
+    padding: 1vh;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: ease-in-out 200ms;
+    margin-top: 1vh;
+
+}
+#total-container button:hover{
+    background-color: #171717;
+    color: white;
+}
+
+
+
+
+#items {
+    font-size: 2vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+
+#items h2 {
+    margin-top: -1vh;
+    font-size: 4vh;
+}
+
+#items h3 {
+    font-size: 2vh;
+    margin-bottom: 5px;
+}

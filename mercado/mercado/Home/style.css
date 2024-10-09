@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* BACKGROUND PAGES */
+
+.background-page1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/forestBackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #131718;
+    
+ 
+}
+
+.background-page3 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../image/background-page3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}   
+
+/* =========================================================== */
+
+
+/* HEADER */
+
+header {
+    height: 10vh;
+    width: 100%;
+    transition: ease-in-out 400ms;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    img {
+        /* TAMANHO IMAGENS HEADER */
+        height: 6vh;
+        margin-left: -4vw;
+    }
+    
+    p {
+        font-size: 2vh;
+        font-weight: 400;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        transition: ease-in-out 200ms;
+
+    }
+
+    p:hover {
+        border-bottom: solid black 1px;
+    }
+
+
+
+
+    .text-header {
+        /* TAMANHO TEXTO HEADER */
+        display: flex;
+        gap: 1vw;
+    }
+
+    .logo-header {
+        /* TAMANHO LOGO HEADER */
+        height: 6vh;
+        width: auto;
+    }
+
+    .icons-header {
+        /* TAMANHO ICONES HEADER */
+        display: flex;
+        gap: 2vw;
+
+        img {
+            cursor: pointer;
+        }
+
+       
+
+
+    }
+}
+
+/* =========================================================== */
+
+
+/* WELCOME-TEXT-PAGE1 */
+
+.align-welcome-text {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+
+    #welcome-align-text {
+        margin-left: 4vw;
+        font-size: 16vh;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        opacity: 0;
+        transition: ease-in-out 700ms;
+    }
+
+    
+
+    
+
+}
+
+/* =========================================================== */
+
+/* PAGE2 LUMBER */
+
+.image-lumber-page2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  
+
+    #image_lumber {
+        margin-left: 4vw;
+        border-radius: 2vh;
+        height: 70vh;
+        width: 40vw;
+        background-image: url(../image/catalog_clima_5.jpg);
+        filter: brightness(50%);
+        background-size: cover;
+        opacity: 0;
+        transition: ease-in-out 800ms;
+        margin-bottom: -6vh;
+
+    }
+
+}
+
+.words-lumber-page2 {
+    max-width: 40vw;
+    margin-left: 4vw;
+ 
+   
+
+    #text-lumber-page2 {
+        font-size: 2.5vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        color: white;
+        
+      
+    }
+}
+
+/* =========================================================== */
+
+/* PAGE3 */
+
+.align-block-page3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 600ms;
+    
+
+    #image-block-page3{
+        height: 25vh;
+        width: auto;
+        opacity: 0;
+        transition: ease-in-out 800ms;
+    }
+
+    
+    
+}
+
+
+/* =========================================================== */
+
+
+/* PAGE2 LUMBER */
+
+footer {
+    height: 30vh;
+    background-color: #131718;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        height: 4vh;
+        width: auto;
+        margin-left: 1vw;
+        cursor: pointer;
+    }
+
+
+}
+
+.align-text-fotter {
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    p {
+        font-size: 2vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        margin-top: 2vh;
+        cursor: pointer;
+    }
+
+
+}
+
+/* =========================================================== */
